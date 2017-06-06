@@ -14,22 +14,16 @@
 #usage</br>
 #把NoPasteTextField.h和NoPasteTextField.m  NoPasteTextView.h和NoPasteTextView.m文件导入项目中</br>
 #NoPasteTextField.m  NoPasteTextView.m里面分别添加了一下代码
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender</br>
+-(BOOL)canPerformAction:(SEL)action withSender:(id)sender
 
-{</br>
+{
     
-    if(action ==@selector(paste:))//禁止粘贴</br>
+    if ([UIMenuController sharedMenuController]) {
         
-        return NO;</br>
-    
-    if(action ==@selector(select:))// 禁止选择</br>
+        [UIMenuController sharedMenuController].menuVisible = NO;
         
-        return NO;</br>
+    }
     
-    if(action ==@selector(selectAll:))// 禁止全选</br>
-        
-        return NO;</br>
+    return NO;
     
-    return[super canPerformAction:action withSender:sender];</br>
-    
-}</br>
+}
