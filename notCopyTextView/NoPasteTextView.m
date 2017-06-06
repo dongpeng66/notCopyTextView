@@ -9,23 +9,17 @@
 #import "NoPasteTextView.h"
 
 @implementation NoPasteTextView
-- (BOOL)canPerformAction:(SEL)action withSender:(id)sender
+-(BOOL)canPerformAction:(SEL)action withSender:(id)sender
 
 {
     
-    if(action ==@selector(paste:))//禁止粘贴
+    if ([UIMenuController sharedMenuController]) {
         
-        return NO;
-    
-    if(action ==@selector(select:))// 禁止选择
+        [UIMenuController sharedMenuController].menuVisible = NO;
         
-        return NO;
+    }
     
-    if(action ==@selector(selectAll:))// 禁止全选
-        
-        return NO;
-    
-    return[super canPerformAction:action withSender:sender];
+    return NO;
     
 }
 /*

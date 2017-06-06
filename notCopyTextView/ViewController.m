@@ -23,12 +23,12 @@
     _notCopyTextView.delegate=self;
     _notCopyTextView.textColor=[UIColor redColor];
     _notCopyTextView.text=@"分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市分霍建华为何加我哈几点睡的就撒谎的金沙江的哈建华大街撒回家哈涉及到哈市";
-//    [self.view addSubview:_notCopyTextView];
+    [self.view addSubview:_notCopyTextView];
     
     _textField=[[NoPasteTextField alloc]initWithFrame:CGRectMake(100, 100, 300, 30)];
     _textField.text=@"的就撒谎的金沙江的哈建华大";
     
-    [self.view addSubview:_textField];
+//    [self.view addSubview:_textField];
     
     
     
