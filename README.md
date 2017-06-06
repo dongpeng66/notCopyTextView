@@ -13,7 +13,7 @@
 
 #usage</br>
 #把NoPasteTextField.h和NoPasteTextField.m  NoPasteTextView.h和NoPasteTextView.m文件导入项目中</br>
-#NoPasteTextField.m  NoPasteTextView.m里面分别添加了一下代码
+#NoPasteTextField.m  NoPasteTextView.m里面分别添加了一下代码</br>
 -(BOOL)canPerformAction:(SEL)action withSender:(id)sender
 
 {
